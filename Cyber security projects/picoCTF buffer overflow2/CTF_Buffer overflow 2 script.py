@@ -1,8 +1,8 @@
 from pwn import *
 
 # Set up the target; adjust the host and port as needed
-target_host = 'saturn.picoctf.net'
-target_port = 63465
+target_host = #'saturn.picoctf.net' picoCTF host
+target_port = #63465 port shown in picoCTF
 
 # Load the ELF binary
 elf = ELF('./vuln')
